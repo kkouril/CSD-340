@@ -1,2 +1,4 @@
-# CSD-340
-CSD340 - Web Development Course
+# CSD 340 Web Development with HTML and CSS
+## Contributors
+* Dr. Mortoza Abdullah
+* Katie Kouril
