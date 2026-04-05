@@ -1,0 +1,47 @@
+container {
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+h1 { 
+	background-color: #01F3FF; 
+	color: #002B2E; 
+	border: 1px solid #D6A800; 
+	padding: 10px;
+	font-family: "Arial Black", Arial, sans-serif; 
+}
+h2 { 
+	background-color: #01F3FF; 
+	color: #002B2E; 
+	border: 1px solid #D6A800; 
+	padding: 10px;
+	font-family: "Arial Black", Arial, sans-serif;
+}
+h3 { 
+	background-color: #01F3FF; 
+	color: #002B2E; 
+	border: 1px solid #D6A800; 
+	padding: 10px;
+	font-family: "Arial Black", Arial, sans-serif; 
+}
+h4 { 
+	background-color: #01F3FF; 
+	color: #002B2E; 
+	border: 1px solid #D6A800; 
+	padding: 10px;
+	font-family: "Arial Black", Arial, sans-serif; 
+}
+a { 
+	color: #007A82; 
+	text-decoration: 
+	none; 
+	font-family: "Arial Black", Arial, sans-serif; 
+}
+a:hover { 
+	color: #005A60; 
+	font-family: "Arial Black", Arial, sans-serif; 
+}
+a:visited { 
+	color: #004A50; 
+	font-family: "Arial Black", Arial, sans-serif; 
+}
