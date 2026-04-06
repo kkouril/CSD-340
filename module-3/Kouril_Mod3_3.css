@@ -1,0 +1,87 @@
+h1 {
+	color: #002B2E;
+	font-family: "Arial Black", Arial, sans-serif;
+	text-align: center;
+}
+
+h3 {
+	color: #002B2E;
+	font-family: "Arial Black", Arial, sans-serif;
+	font-weight: 500;   
+}
+
+a {
+	color: #007A82;
+	text-decoration: none;
+	font-family: "Arial Black", Arial, sans-serif;
+}
+
+a:hover {
+	color: #005A60;
+	text-decoration: underline; 
+}
+
+a:visited {
+	color: #004A50;
+}
+
+
+.side-by-side {
+	width: 45%;
+}
+
+
+.left { 
+	float: left; 
+}
+
+.right { 
+	float: right; 
+}
+
+.back-link { 
+	float: right; 
+}
+
+.last-div {
+	width: 100%;
+	margin-top: 60%;
+	float: right;
+	margin-bottom: 20px;
+}
+
+.clear { 
+	clear: both; 
+}
+
+
+.ordered-box {
+	border: 1px solid red;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.unordered-box {
+	border: 1px dashed red;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+
+.ordered-list {
+	list-style-position: inside;
+	font-weight: 300;
+	margin: 0;
+	padding-left: 15px;
+	font-family: "Arial Black", Arial, sans-serif;
+}
+
+.unordered-list {
+	list-style-position: inside;
+	list-style-type: upper-roman;
+	font-weight: 300;
+	margin: 0;
+	padding-left: 15px;
+	font-family: "Arial Black", Arial, sans-serif;
+}
+
