@@ -1,0 +1,53 @@
+body{
+	font-family: "Arial Black", Arial, sans-serif;
+}
+
+#image-gallery{
+	margin-top: 10%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 0; /* borders touch */
+	border: 2px solid rgba(0, 188, 212, 1);
+}
+
+#image-gallery .side-by-side{
+	padding: 10px;
+}
+
+#image-gallery .side-by-side:not(:last-child){
+	border-right: 2px solid rgba(0, 188, 212, 1); 
+}
+
+h1{
+	text-align: center;
+	color: rgba(0, 188, 212, 1);
+}
+
+h3{
+	text-align: center;
+	color: rgba(0, 188, 212, 1); 
+}
+
+figure{
+	text-align: center;
+}
+
+figcaption{
+	font-style: italic;
+	font-size: 0.75em;
+	color: rgba(0, 188, 212, 1);
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.last-div{
+	margin-top: 20px;
+	text-align: right;
+}
+
+.back-link{
+	float: none;
+}
