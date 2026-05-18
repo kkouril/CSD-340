@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSD 340 Web Development with HTML and CSS </title>
+<meta name="keywords"
+	content="HTML, CSS">
+<meta name="description"
+	content="Building a Web Page in HTML and CSS">
+<meta name="author"
+	content="Katie Kouril">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0">
+<link href="Kouril_Mod2_2.css" type="text/css"
+	rel="stylesheet">
+</head>
+<body>
+<div id="container">
+
+<h1>Assignment 9.3: Javascript - Part 1</h1>
+
+<h2>A Story About New Jersey's Pine Barrens</h2>
+
+<p>People of New Jersey say the Pine Barens are quiet at night, always too quiet. Down past the old cranberry bogs, there's a place locals will never go after dark - Lantern Man's Crossing.</p>
+
+<p>Years ago, and of course, no one ever agrees on when, there was a railroad worker named Joseph tending to the old Pine Barrens line. He walked the tracks every night with a <span id="word1">__________</span> lantern, checking for damage, clearing branches, and making sure the trains could pass safely.</p>
+
+<p>One stormy night, the wind howled so loud that no one heard the train coming. Not even Joseph.</p>
+
+<p>They say the conductor saw a flash of light on the tracks - Joseph's lantern - and then, nothing.</p>
+
+<p>The following morning, the lantern was found, but no sign of Joseph.</p>
+
+<p>The railroad shutdown that section of the track, but the legend didn't. That's because people started seeing a light in the woods.</p>
+
+<p>Not a flashlight.</p>
+<p>Not a campfire.</p>
+<p>A lantern - old, metal, swinging slowly back and forth.</p>
+
+<p>Some say it appears when you're lost.</p>
+<p>Some say the light glows with a strange, <span id="word2">__________</span> color.</p>
+<p>Some say it appears when you're somewhere you shouldn't be.</p>
+<p>And some say it appears when you speak Joseph's name out loud.</p>
+
+<p>But, here's the part that makes people nervous:</p>
+
+<p>If you follow the lantern, it always stays the same distance ahead of you.</p>
+<p>Never closer.</p>
+<p>Never farther.</p>
+<p>Just leading you deeper into the pines.</p>
+
+<p>And if you stop following it...</p>
+<p>The lantern stops too.</p>
+
+<p>Then it turns toward you.</p>
+<p>Some people swear they hear footsteps behind them, slow and <span id="word3">__________</span>.</p>
+
+<p>That's when you see him - a tall figure, face hidden in the shadows, holding the lantern out like an invitation.</p>
+
+<p>Witnesses say he doesn't speak. He just tilts his head, like he's waiting for you to take the light from his hand.</p>
+
+<p>But if you do?</p>
+
+<p>You're never to be seen again.</p>
+
+<p>The only thing people ever find is the <span id="word4">__________</span> - burning bright, swinging gently, waiting for the next traveler to follow.</p>
+
+<p>If you ever find yourself driving through the Pine Barrens at night, and you see a warm yellow glow drifting between the trees...</p>
+
+<p>Don't stop.</p>
+<p>Don't look.</p>
+<p>And whatever you do...</p>
+
+<p><strong>Don't follow the light.</strong></p>
+
+<button onclick="fillWord1()">Reveal Word 1</button>
+<button onclick="fillWord2()">Reveal Word 2</button>
+<button onclick="fillWord3()">Reveal Word 3</button>
+<button onclick="fillWord4()">Reveal Word 4</button>
+
+</div>
+
+<script>
+	let word1 = "rusted";
+	let word2 = "unnatural";
+	let word3 = "dragging";
+	let word4 = "lantern";
+
+	function fillWord1() {
+		document.getElementById("word1").textContent = word1;
+	}
+
+	function fillWord2() {
+		document.getElementById("word2").textContent = word2;
+	}
+
+	function fillWord3() {
+		document.getElementById("word3").textContent = word3;
+	}
+
+	function fillWord4() {
+		document.getElementById("word4").textContent = word4;
+	}
+</script>
+
+</body>
+</html>
