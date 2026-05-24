@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSD 340 Web Development with HTML and CSS</title>
+<meta name="keywords" 
+	content="HTML, CSS">
+<meta name="description" 
+	content="Module 10.3 Assignment">
+<meta name="author" 
+	content="Katie Kouril">
+<meta name="viewport" 
+	content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+	font-family: "Arial Black", Arial, sans-serif;
+	text-align: center;
+	padding: 20px;
+	background: #f4f4f4;
+}
+
+#mainImage {
+	width: 350px;
+	height: 250px;
+	border: 4px solid #333;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.thumb-container {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.thumb {
+	width: 120px;
+	height: 80px;
+	border: 3px solid #666;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: transform 0.2s, border-color 0.2s;
+}
+
+.thumb:hover {
+	transform: scale(1.1);
+	border-color: #ff6600;
+}
+</style>
+
+<script>
+function displayImage(imageFile) {
+	const mainImage = document.getElementById("mainImage");
+	mainImage.src = imageFile;
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+	<h1>Assignment 10.3: JavaScript - Part 2</h1>
+</header>
+
+<!-- Main Image -->
+<img id="mainImage" src="images/hype.jpg" alt="Hype Emote">
+
+<!-- Thumbnails -->
+<div class="thumb-container">
+	<img class="thumb" src="images/love2.jpg" alt="Love Emote"
+		onclick="displayImage('images/love2.jpg')">
+
+	<img class="thumb" src="images/happy.jpg" alt="Happy Emote"
+		onclick="displayImage('images/happy.jpg')">
+
+	<img class="thumb" src="images/mad.jpg" alt="Mad Emote"
+		onclick="displayImage('images/mad.jpg')">
+</div>
+
+<footer>
+	<p><a href="../index.html" class="back-link">Back to Landing Page</a></p>
+</footer>
+
+</body>
+</html>
