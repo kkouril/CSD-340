@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSD 340 Web Development with HTML and CSS</title>
+<meta name="keywords" 
+	content="HTML, CSS">
+<meta name="description" 
+	content="Module 11.2 Assignment">
+<meta name="author" 
+	content="Katie Kouril">
+<meta name="viewport" 
+	content="width=device-width, initial-scale=1.0">
+
+<style>
+	body {
+		font-family: "Arial Black", Arial, sans-serif;
+		margin: 40px;
+		background: #f4f4f4;
+	}
+
+	h1 {
+		color: #333;
+		font-family: "Arial Black", Arial, sans-serif;
+	}
+
+	#container {
+		background: white;
+		padding: 20px;
+		width: 400px;
+		border-radius: 8px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		font-family: "Arial Black", Arial, sans-serif;
+	}
+
+	input[type="text"] {
+		width: 95%;
+		padding: 10px;
+		margin-bottom: 15px;
+		border: 1px solid #aaa;
+		border-radius: 5px;
+		font-size: 16px;
+		font-family: "Arial Black", Arial, sans-serif;
+	}
+
+	button {
+		width: 100%;
+		padding: 12px;
+		margin-top: 10px;
+		border: none;
+		border-radius: 5px;
+		font-size: 16px;
+		color: white;
+		cursor: pointer;
+		font-family: "Arial Black", Arial, sans-serif;
+	}
+
+	#addBtn { background-color: #28a745; }
+	#deleteBtn { background-color: #dc3545; }
+	#sortBtn { background-color: #007bff; }
+
+	button:hover {
+		opacity: 0.9;
+	}
+
+	ul {
+		padding-left: 20px;
+		font-family: "Arial Black", Arial, sans-serif;
+	}
+
+	a {
+		text-decoration: none;
+		font-size: 14px;
+		font-family: "Arial Black", Arial, sans-serif;
+	}
+</style>
+
+</head>
+
+<body>
+
+<h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+<div id="container">
+
+	<label for="itemInput">Enter a task below, then click "Add" to save it. You can View, Delete, or Sort entries using the buttons.</label>
+	<input type="text" id="itemInput">
+
+	<button id="addBtn" onclick="addItem()">Add</button>
+	<button id="deleteBtn" onclick="deleteLast()">Delete Last Entry</button>
+	<button id="sortBtn" onclick="sortItems()">Sort</button>
+
+	<h2>Things To Do:</h2>
+	<div id="displayArea"></div>
+
+</div>
+
+<script>
+
+let items = [];
+
+function displayItems() {
+	let output = "<ul>";
+	for (let i = 0; i < items.length; i++) {
+		output += `<li>${items[i]} 
+		<a href="#" onclick="deleteSpecific(${i})" style="color:red; margin-left:10px;">
+			[Delete]
+		</a>
+	</li>`;
+	}
+	output += "</ul>";
+	document.getElementById("displayArea").innerHTML = output;
+}
+
+function addItem() {
+	let newItem = document.getElementById("itemInput").value;
+
+	if (newItem.trim() === "") {
+		alert("Please enter something before adding.");
+	return;
+    }
+
+	items.push(newItem);
+	alert("Added: " + newItem);
+
+	document.getElementById("itemInput").value = "";
+	displayItems();
+}
+
+function deleteLast() {
+	if (items.length === 0) {
+		alert("There is nothing to delete.");
+	return;
+	}
+
+	let removed = items.pop();
+	alert("Deleted last entry: " + removed);
+
+	displayItems();
+}
+
+function deleteSpecific(index) {
+	let removed = items.splice(index, 1);
+	alert("Deleted: " + removed);
+
+	displayItems();
+}
+
+function sortItems() {
+	if (items.length === 0) {
+		alert("There is nothing to sort.");
+	return;
+    }
+
+	items.sort();
+	alert("The list has been sorted.");
+
+	displayItems();
+}
+</script>
+
+<footer>
+	<p><a href="../index.html" class="back-link">Back to Landing Page</a></p>
+</footer>
+
+</body>
+</html>
